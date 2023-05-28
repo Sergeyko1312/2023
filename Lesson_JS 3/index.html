@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>Game</h1>
+    <div class="settings">
+        <label>Width:</label>
+        <input class="inpwdth" type="text">
+        <label>Height:</label>
+        <input class="inphght" type="text">
+        <label>Colour:</label>
+        <input class="inpcolor" type="color">
+    </div>
+    <div class="btn_create" onclick="createBlock()">Create block</div>
+    <div class="container"></div>
+    <div class="btns">
+        <div class="control" onclick="moveRight()">Right</div>
+        <div class="control" onclick="moveLeft()">Left</div>
+        <div class="control" onclick="moveUp()">Up</div>
+        <div class="control" onclick="moveDown()">Down</div>
+    </div>
+
+</body>
+</html>

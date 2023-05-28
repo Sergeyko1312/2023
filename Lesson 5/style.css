@@ -1,0 +1,30 @@
+body{
+    background-color: blue;
+}
+.white {
+    color: white;
+}
+.field {
+    background-color: blue;
+    height: 1000px;
+}
+.row {
+    display: flex;
+
+}
+.square{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+.chess {
+    position: absolute;
+    margin: 0 auto;
+}
+.chess:hover {
+    color:lightgreen;
+}
+.green {
+    color: green;
+}

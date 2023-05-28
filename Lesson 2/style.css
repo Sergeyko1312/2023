@@ -1,0 +1,12 @@
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: linear-gradient(blue, red, yellow);
+}
+li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

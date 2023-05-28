@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftpart">
+            <h1>Contact Us</h1>
+            <div class="icons">
+                <div class="icon"><a href="#">f</a></div>
+                <div class="icon"><a href="#">t</a></div>
+                <div class="icon"><a href="#">in</a></div>
+            </div>
+            <h4>or use our contact from below</h4>
+            <form class="form" id="contact-form">
+                <label for="email">Email</label>
+                <input class="input" type="text" name="email" placeholder="Email">
+                <label for="phone">Phone number</label>
+                <input class="input" type="tel" name="phone" placeholder="Phone">
+                <h4>Type your message here:</h4>
+                <textarea></textarea>
+                <a href="#">Need additional help?</a>
+                <button type="submit">CONTACT ME</button>
+            </form>
+        </div>
+        <div class="rightpart">
+            <h1>Hello, User!</h1>
+            <h4>If you want to know more info about our project than</h4>
+            <button>info</button>
+        </div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('Pt246k64o9OLmCe3G');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_y5xl6de', 'template_ko7o7on', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="reply_to">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

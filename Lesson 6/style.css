@@ -1,0 +1,42 @@
+.img{
+    height: 205px;
+    width: 166.3px;
+    margin-top: -110px;
+}
+.text{
+    text-align: right;
+    color: white;
+
+}
+h1{
+    font-size: 15pt;
+}
+p{
+    font-size: 10pt;
+}
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    margin-left: 15%;
+    margin-top: 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.colour1 {
+    background: linear-gradient(to top, #a266bb 20%, #758ccc 50%);
+}
+.colour2 {
+    background: linear-gradient(to top, #642020 20%, #b13838 50%);
+}
+.colour3 {
+    background: linear-gradient(45deg, #000, #370077);
+}
+.colour4 {
+    background: linear-gradient(45deg, rgb(54, 0, 0), #9e0000);
+}

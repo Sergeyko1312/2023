@@ -1,0 +1,17 @@
+.btn2 {
+    background-color: blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid red;
+    vertical-align: center;
+    font-size: 40px;
+}
+.btn {
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: chocolate;
+    width: 100px;
+    height: 25px;
+}

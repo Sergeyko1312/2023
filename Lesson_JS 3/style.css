@@ -1,0 +1,38 @@
+.settings {
+    display: flex;
+    flex-direction: row ;
+    font-size: 20px;
+}
+.btn_create {
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    background-color: turquoise;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.container {
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 600px;
+    height: 550px;
+    position: relative;
+}
+.btns {
+    width: 70px;
+    height: 280px;
+    margin-left: 602px;
+    margin-top: -400px;
+}
+.control {
+    text-align: center;
+    background-color: orange;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;  
+    font-size: larger;
+}
+.block {
+    position: absolute;
+}

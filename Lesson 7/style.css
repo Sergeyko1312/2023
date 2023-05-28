@@ -1,0 +1,50 @@
+* {
+    margin: auto;
+}
+.container {
+    width: 641px;
+
+}
+.header {
+    display: flex;  
+    width: 100%;
+    height: 115px;
+    background-color: #000000;
+}
+.cileft {
+    float: left;
+}
+.ciright {
+    float: right;
+}
+p {
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    font-family: "Arial";
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list{
+    width: 260px;
+    margin: 0px;
+    margin-top: 15px;
+}
+.txt {
+    border-left: 2px dotted black;
+    width: 370px;
+    margin-left: 265px;
+    margin-top: -230px;
+}
+.logo {
+    margin-left: 539px;
+}
+.end {
+    margin-top: 100px;
+    margin-left: 10px;
+    position: absolute;
+    color: aliceblue;
+}
